@@ -1,0 +1,26 @@
+.view {
+  background-image: url(./assets/striped-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE 10+ */
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.prose {
+  max-width: 65ch;
+  line-height: 1.75rem;
+}
+.cshadow {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
+    20px 20px 20px rgba(0, 0, 0, 0.4), 30px 30px 30px rgba(0, 0, 0, 0.1) !important;
+}

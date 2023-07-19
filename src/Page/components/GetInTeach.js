@@ -31,9 +31,9 @@ function GetInTeach({ data }) {
       )
       .then(
         (result) => {
-          document.getElementById("name").innerText = "";
-          document.getElementById("email").innerText = "";
-          document.getElementById("message").innerText = "";
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
           setmsg(true);
           setTimeout(() => {
             setmsg(false);

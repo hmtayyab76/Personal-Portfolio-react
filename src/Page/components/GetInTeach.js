@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import map from "../assets/map.webp";
-
+import "../portfolio.css";
 function GetInTeach({ data }) {
+  const [msg, setmsg] = useState(false);
+
   const form = useRef();
   if (!data) {
     return <div>Error: Invalid data for GetInTeach component</div>;
@@ -17,7 +19,6 @@ function GetInTeach({ data }) {
     CInstagram,
     CTwitter,
   } = data;
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -30,8 +31,10 @@ function GetInTeach({ data }) {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("Message Sent");
+          setmsg(true);
+          setTimeout(() => {
+            setmsg(false);
+          }, 2000);
         },
         (error) => {
           console.log(error.text);
@@ -271,6 +274,21 @@ function GetInTeach({ data }) {
               >
                 Send Message
               </button>
+              {msg ? (
+                <div className="fixed top-10 right-10 flex items-center z-50 ">
+                  <div className="relative p-2 bg-black rounded font-bold text-green-700">
+                    <div className="flex items-center ">
+                      <span className="ml-2">Message sent successfully!</span>
+                    </div>
+                    <div
+                      className="absolute bottom-0 right-0 w-full h-1 bg-green-700 rounded-2xl"
+                      style={{
+                        animation: "progress 2s linear forwards",
+                      }}
+                    />
+                  </div>
+                </div>
+              ) : null}
             </form>
           </div>
         </div>

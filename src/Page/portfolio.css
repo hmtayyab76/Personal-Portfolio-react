@@ -24,3 +24,22 @@ html {
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
     20px 20px 20px rgba(0, 0, 0, 0.4), 30px 30px 30px rgba(0, 0, 0, 0.1) !important;
 }
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-progress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: green;
+  animation: progress 2s linear forwards;
+}

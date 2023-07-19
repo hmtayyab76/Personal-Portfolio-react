@@ -9,7 +9,7 @@ const ResumeDownloadButton = () => {
 
   return (
     <div
-      className="flex rounded-full border-2  bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2  focus:ring-offset-2 focus:ring-offset-stone-800 border-green-800 focus:ring-green-800"
+      className="flex rounded-full border-2  bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2  focus:ring-offset-2 focus:ring-offset-stone-800 border-green-800 focus:ring-green-800 cursor-pointer"
       onClick={handleDownload}
     >
       <svg

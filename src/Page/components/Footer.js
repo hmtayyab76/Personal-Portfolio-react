@@ -4,7 +4,7 @@ function Footer({ data }) {
   const { Date, Name, CGitHub, CLinkdin, CInstagram, CTwitter } = data;
   return (
     <div className="flex w-full flex-col items-center justify-between gap-y-4 border-t-2 border-stone-700 bg-stone-800 px-4 py-6 sm:flex-row sm:py-4 md:px-8">
-      <p className="w-max whitespace-nowrap text-sm font-semibold text-stone-300">
+      <p className="w-max whitespace-nowrap text-sm font-semibold text-stone-300 cursor-pointer hover:text-white">
         {Date + " " + Name}
       </p>
       <div className="flex gap-x-6 sm:gap-x-3">

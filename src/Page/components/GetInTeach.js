@@ -31,6 +31,9 @@ function GetInTeach({ data }) {
       )
       .then(
         (result) => {
+          document.getElementById("name").innerText = "";
+          document.getElementById("email").innerText = "";
+          document.getElementById("message").innerText = "";
           setmsg(true);
           setTimeout(() => {
             setmsg(false);
@@ -234,6 +237,7 @@ function GetInTeach({ data }) {
                   placeholder="Name"
                   required
                   type="text"
+                  id="name"
                   fdprocessedid="qv1rbpo"
                 />
               </div>
@@ -249,6 +253,7 @@ function GetInTeach({ data }) {
                   required
                   type="email"
                   fdprocessedid="ttlhrh"
+                  id="email"
                 />
               </div>
               <label className="sr-only" htmlFor="message">
@@ -263,6 +268,7 @@ function GetInTeach({ data }) {
                   required
                   rows="6"
                   type="text"
+                  id="message"
                 ></textarea>
               </div>
               <button

@@ -30,11 +30,11 @@ const ProjectsData = [
     description:
       "The CV Builder app is a web application built using React and Tailwind CSS, designed to help users create professional and visually appealing CVs, cover letters, and resumes with ease. The app provides a user-friendly interface, making it accessible to both beginners and experienced users alike.",
     features: {
-      f1: "CV Creation: Users can start building their personalized CVs from scratch by selecting from a variety of pre-designed templates. The app offers multiple templates catering to different industries and professions, ensuring that users find a design that best suits their needs.",
-      f2: "Cover Letter Builder: Alongside CVs, the app includes a Cover Letter Builder, enabling users to create compelling cover letters that complement their CVs. Users can tailor their cover letters to specific job applications, enhancing their chances of securing an interview.",
-      f3: "Resume Templates: The app offers a selection of ready-to-use resume templates that users can customize to their liking. These templates are designed to showcase the user's skills, experiences, and achievements in a visually engaging manner.",
-      f4: "Easy Customization: Users can customize the content, layout, font styles, colors, and other visual elements of their CVs, cover letters, and resumes using an intuitive editor. The app provides real-time previewing, enabling users to see the changes as they make them.",
-      f5: "Save and Download Options: Once the users are satisfied with their creations, they can save their CVs, cover letters, and resumes in their accounts for future editing. Additionally, they can download the final documents in various formats, such as PDF, DOCX, or TXT, making it convenient for sharing with potential employers.",
+      f1: "CV Creation: Users can start building their personalized CVs from scratch by selecting from a variety of pre-designed templates.",
+      f2: "Cover Letter Builder: Alongside CVs, the app includes a Cover Letter Builder, enabling users to create compelling cover letters that complement their CVs.",
+      f3: "Resume Templates: The app offers a selection of ready-to-use resume templates that users can customize to their liking.",
+      f4: "Easy Customization",
+      f5: "Save and Download Options",
     },
     overall:
       "Overall, the CV Builder app empowers job seekers to present their qualifications and achievements in a professional and visually appealing manner. With its user-friendly interface, customization options, and various templates, users can create impressive CVs, cover letters, and resumes that stand out in the competitive job market. Whether for entry-level positions or experienced professionals, the CV Builder app is an indispensable tool for anyone seeking to enhance their job application materials and boost their chances of landing their dream job",
@@ -46,9 +46,9 @@ const ProjectsData = [
     description:
       "The Niotech Cyber Project is a cutting-edge web application that aims to revolutionize the way businesses manage and enhance their cybersecurity practices. Built using TypeScript (TS), React, Tailwind CSS, and Material-UI (MUI) components, this project offers a powerful and user-friendly interface for businesses to effectively manage their cybersecurity operations, monitor potential threats, and analyze security risks.",
     features: {
-      f1: "User Authentication and Access Control: The application provides robust user authentication mechanisms, enabling businesses to securely manage user accounts and access levels. Administrators can grant specific permissions to users based on their roles within the organization, ensuring sensitive data is protected.",
-      f2: "Dashboard and Data Visualization: The Niotech Cyber Project includes an intuitive dashboard with interactive data visualizations. Administrators can monitor critical cybersecurity metrics, track security incidents, and analyze trends. This real-time overview empowers businesses to make informed decisions and respond promptly to potential threats.",
-      f3: "Threat Detection and Alerting: Leveraging the power of React and TypeScript, the application integrates with various cybersecurity tools and APIs to detect potential threats and vulnerabilities. Automated alerts notify administrators of any suspicious activities or potential security breaches, allowing for timely responses.",
+      f1: "User Authentication and Access Control.",
+      f2: "Dashboard and Data Visualization.",
+      f3: "Threat Detection and Alerting.",
       f4: "Admin Dashboard: As part of the project, an advanced admin dashboard is created using Material-UI (MUI) components. The dashboard provides administrators with an all-encompassing view of cybersecurity activities, system performance, and user activity. It enables administrators to manage users, view reports, and configure security settings efficiently.",
     },
     overall:
@@ -61,11 +61,11 @@ const ProjectsData = [
     description:
       "The Add to Cart Shopping Website is a modern and user-friendly e-commerce platform that aims to provide shoppers with a seamless and enjoyable shopping experience. This web application is built using Bootstrap, JavaScript, CSS, and React, offering a responsive and visually appealing interface to users across various devices.",
     features: {
-      f1: "Product Catalog and Search: The website includes a comprehensive product catalog with various categories and filters, enabling users to easily find their desired products. A powerful search feature allows shoppers to quickly locate specific items based on keywords",
+      f1: "Product Catalog and Search",
       f2: "Shopping Cart: The core functionality of the website is its shopping cart, where users can add products they wish to purchase. The cart displays the selected items, quantities, and total prices, providing users with a clear overview of their selections.",
-      f3: "Product Details: Clicking on a product thumbnail reveals detailed information about the item, including images, descriptions, specifications, and customer reviews. This feature assists users in making informed purchasing decisions.",
-      f4: "Theme Management (Light/Dark Mode): The website allows users to switch between light and dark themes based on their preferences. The theme management feature enhances the user experience by providing a customizable and visually pleasing interface.",
-      f5: "API Integration for Product Data: The website leverages API integration to fetch product data from external sources, ensuring the availability of the latest products and real-time updates.",
+      f3: "Product Details",
+      f4: "Theme Management (Light/Dark Mode): The website allows users to switch between light and dark themes based on their preferences.",
+      f5: "API Integration for Product Data.",
       f6: "Add to Cart and Checkout: The Add to Cart feature enables users to add products to their shopping cart with a single click. The checkout process guides users through a smooth and secure payment process, offering multiple payment options.",
     },
     overall:
@@ -83,7 +83,7 @@ function SkillsAndDeliverables({ skills }) {
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="px-4 max-sm:p-2 py-2 m-2 bg-slate-300  rounded-lg font-bold"
+            className="px-3 max-sm:p-2 py-2 m-2 bg-slate-300  rounded-lg font-bold"
           >
             {skill}
           </span>
@@ -98,7 +98,7 @@ function FeaturesList({ features }) {
       <h2 className="text-2xl cshadow mt-4 mb-7 font-extrabold tracking-tight  sm:text-3xl">
         <span className="text-green-700">Fea</span>tures:
       </h2>
-      <ul className=" list-decimal pl-8 w-4/5 max-lg:w-full">
+      <ul className=" list-decimal pl-8 w-1/2 max-lg:w-full">
         {Object.values(features).map((feature, index) => (
           <li key={index} className=" text-gray-300 pl-3 text-base font-normal">
             {feature}
@@ -141,9 +141,11 @@ function WorkDetail({ data }) {
             <FeaturesList features={data.features} />
             <h1> </h1>
             <h2 className="my-4 text-2xl cshadow font-extrabold tracking-tight  sm:text-3xl">
-              <span className="text-green-700">End</span> Description:
+              <span className="text-green-700">Conc</span>lusion:
             </h2>
-            <div className=" text-gray-300">{data.overall}</div>
+            <div className=" text-gray-300 w-4/5 max-lg:w-full">
+              {data.overall}
+            </div>
           </div>
         </div>
       ))}

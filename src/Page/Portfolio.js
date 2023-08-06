@@ -8,22 +8,35 @@ import MyWork from "./components/MyWork";
 import EduExp from "./components/EduExp";
 import GetInTeach from "./components/GetInTeach";
 import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import WorkDetail from "./components/WorkDetail";
+
+function Home({ PersonData }) {
+  return (
+    <>
+      <Intro data={PersonData[0]} />
+      <About data={PersonData[1]} />
+      <Stats data={PersonData[2]} />
+      <Stack data={PersonData[3]} />
+      <MyWork data={PersonData[4].Work} />
+      <EduExp
+        education={PersonData[5].Education}
+        experience={PersonData[5].Experience}
+      />
+      <GetInTeach data={PersonData[6]} />
+      <Footer data={PersonData[7]} />
+    </>
+  );
+}
 
 function Portfolio({ PersonData }) {
   return (
     <div className="view flex justify-center min-h-screen w-full p-0 sm:p-8">
       <div className="flex shadow-strong cshadow min-h-full w-full max-w-screen-xl grow text-white flex-col items-start overflow-hidden border border-stone-900 bg-stone-900 shadow-strong sm:rounded-3xl animate-page-in">
-        <Intro data={PersonData[0]} />
-        <About data={PersonData[1]} />
-        <Stats data={PersonData[2]} />
-        <Stack data={PersonData[3]} />
-        <MyWork data={PersonData[4].Work} />
-        <EduExp
-          education={PersonData[5].Education}
-          experience={PersonData[5].Experience}
-        />
-        <GetInTeach data={PersonData[6]} />
-        <Footer data={PersonData[7]} />
+        <Routes>
+          <Route path="/" element={<Home PersonData={PersonData} />} />
+          <Route path="/work-detail" element={<WorkDetail />} />
+        </Routes>
       </div>
     </div>
   );

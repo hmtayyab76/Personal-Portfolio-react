@@ -43,3 +43,8 @@ html {
   background-color: green;
   animation: progress 2s linear forwards;
 }
+/* WorkDetail.css */
+.hsc::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}

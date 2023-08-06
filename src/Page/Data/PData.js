@@ -1,9 +1,20 @@
 import PersonImage from "../assets/person.jpg";
 import CoverImage from "../assets/hero-edited-optimized.webp";
 
-import web1 from "../assets/web1.jpg";
-import web2 from "../assets/web2.jpg";
-import web3 from "../assets/web3.jpg";
+import web1 from "../assets/pi0.png";
+import web2 from "../assets/pi20.png";
+import web3 from "../assets/pi30.png";
+
+import pi0 from "../assets/pi0.png";
+import pi1 from "../assets/Screenshot 2023-08-02 131934.png";
+import pi2 from "../assets/pi1.png";
+import pi3 from "../assets/Screenshot 2023-08-02 132627.png";
+import pi4 from "../assets/Screenshot 2023-08-02 132702.png";
+import pi5 from "../assets/Screenshot 2023-08-02 132736.png";
+import pi6 from "../assets/Screenshot 2023-08-02 132832.png";
+import pi7 from "../assets/Screenshot 2023-08-02 132858.png";
+import pi8 from "../assets/Screenshot 2023-08-02 133019.png";
+import pi9 from "../assets/Screenshot 2023-08-02 133141.png";
 
 const TayyabData = [
   // Intro  [0]
@@ -72,10 +83,46 @@ const TayyabData = [
       {
         WImage: web1,
         WLink: "",
+        ProjectsData: [
+          {
+            name: "CV BUILDER APP",
+            images: [pi0, pi1, pi2, pi3, pi4, pi5, pi6, pi7, pi8, pi9],
+            skills: ["HTML5", "CSS3", "Tailwind CSS", "React", "MUI"],
+            description:
+              "The CV Builder app is a web application built using React and Tailwind CSS, designed to help users create professional and visually appealing CVs, cover letters, and resumes with ease. The app provides a user-friendly interface, making it accessible to both beginners and experienced users alike.",
+            features: {
+              f1: "CV Creation: Users can start building their personalized CVs from scratch by selecting from a variety of pre-designed templates. The app offers multiple templates catering to different industries and professions, ensuring that users find a design that best suits their needs.",
+              f2: "Cover Letter Builder: Alongside CVs, the app includes a Cover Letter Builder, enabling users to create compelling cover letters that complement their CVs. Users can tailor their cover letters to specific job applications, enhancing their chances of securing an interview.",
+              f3: "Resume Templates: The app offers a selection of ready-to-use resume templates that users can customize to their liking. These templates are designed to showcase the user's skills, experiences, and achievements in a visually engaging manner.",
+              f4: "Easy Customization: Users can customize the content, layout, font styles, colors, and other visual elements of their CVs, cover letters, and resumes using an intuitive editor. The app provides real-time previewing, enabling users to see the changes as they make them.",
+              f5: "Save and Download Options: Once the users are satisfied with their creations, they can save their CVs, cover letters, and resumes in their accounts for future editing. Additionally, they can download the final documents in various formats, such as PDF, DOCX, or TXT, making it convenient for sharing with potential employers.",
+            },
+            overall:
+              "Overall, the CV Builder app empowers job seekers to present their qualifications and achievements in a professional and visually appealing manner. With its user-friendly interface, customization options, and various templates, users can create impressive CVs, cover letters, and resumes that stand out in the competitive job market. Whether for entry-level positions or experienced professionals, the CV Builder app is an indispensable tool for anyone seeking to enhance their job application materials and boost their chances of landing their dream job",
+          },
+        ],
       },
       {
         WImage: web2,
         WLink: "",
+        ProjectsData: [
+          {
+            name: "CV BUILDER APP",
+            images: [pi0, pi1, pi2, pi3, pi4, pi5, pi6, pi7, pi8, pi9],
+            skills: ["HTML5", "CSS3", "Tailwind CSS", "React", "MUI"],
+            description:
+              "The CV Builder app is a web application built using React and Tailwind CSS, designed to help users create professional and visually appealing CVs, cover letters, and resumes with ease. The app provides a user-friendly interface, making it accessible to both beginners and experienced users alike.",
+            features: {
+              f1: "CV Creation: Users can start building their personalized CVs from scratch by selecting from a variety of pre-designed templates. The app offers multiple templates catering to different industries and professions, ensuring that users find a design that best suits their needs.",
+              f2: "Cover Letter Builder: Alongside CVs, the app includes a Cover Letter Builder, enabling users to create compelling cover letters that complement their CVs. Users can tailor their cover letters to specific job applications, enhancing their chances of securing an interview.",
+              f3: "Resume Templates: The app offers a selection of ready-to-use resume templates that users can customize to their liking. These templates are designed to showcase the user's skills, experiences, and achievements in a visually engaging manner.",
+              f4: "Easy Customization: Users can customize the content, layout, font styles, colors, and other visual elements of their CVs, cover letters, and resumes using an intuitive editor. The app provides real-time previewing, enabling users to see the changes as they make them.",
+              f5: "Save and Download Options: Once the users are satisfied with their creations, they can save their CVs, cover letters, and resumes in their accounts for future editing. Additionally, they can download the final documents in various formats, such as PDF, DOCX, or TXT, making it convenient for sharing with potential employers.",
+            },
+            overall:
+              "Overall, the CV Builder app empowers job seekers to present their qualifications and achievements in a professional and visually appealing manner. With its user-friendly interface, customization options, and various templates, users can create impressive CVs, cover letters, and resumes that stand out in the competitive job market. Whether for entry-level positions or experienced professionals, the CV Builder app is an indispensable tool for anyone seeking to enhance their job application materials and boost their chances of landing their dream job",
+          },
+        ],
       },
       {
         WImage: web3,

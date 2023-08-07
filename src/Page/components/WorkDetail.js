@@ -22,6 +22,8 @@ import pi33 from "../assets/pi33.png";
 import pi34 from "../assets/pi34.png";
 import pi35 from "../assets/pi35.png";
 
+import arrow from "../assets/arrow-right-solid.svg";
+
 const ProjectsData = [
   {
     name: "CV BUILDER APP",
@@ -121,13 +123,18 @@ function WorkDetail({ data }) {
               className={`max-lg:w-full w-4/5 p-10 max-lg:p-5 overflow-x-auto flex transform transition-transform duration-500 hsc`}
             >
               {data.images.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt=""
-                  className="relative mx-4 max-lg:my-0 max-lg:mx-2 my-4 rounded-2xl"
-                />
+                <>
+                  <img
+                    key={index}
+                    src={image}
+                    alt=""
+                    className="relative mx-4 max-lg:my-0 max-lg:mx-2 my-4 rounded-2xl"
+                  />
+                </>
               ))}
+              <div className=" absolute right-1 top-2/4 bg-cyan-600 w-[25px] rounded-full p-1">
+                <img src={arrow} alt="arrow" className=" w-full" />
+              </div>
             </div>
           </div>
           <div>

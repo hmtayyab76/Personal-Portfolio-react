@@ -1,6 +1,4 @@
 import React from "react";
-// import PersonImage from "../assets/person.jpg";
-
 function About({ data }) {
   const {
     description1,

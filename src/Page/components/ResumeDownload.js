@@ -1,4 +1,4 @@
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Hafiz-Muhammad-Tayyab-Resume.pdf";
 const ResumeDownloadButton = () => {
   const handleDownload = () => {
     const link = document.createElement("a");

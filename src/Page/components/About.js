@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 function About({ data }) {
   const {
     description1,
@@ -174,14 +175,16 @@ function About({ data }) {
             </h2>
           </div>
           <div className="-my-8 flex w-full flex-1 justify-center self-center lg:-ml-24 lg:block  lg:py-16">
-            <div className="relative z-20 aspect-square w-32 overflow-hidden rounded-3xl shadow-xl shadow-black/40  lg:w-auto ">
-              {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-              <img
-                src={PImage}
-                alt="profile-image"
-                className="object-cover absolute h-full w-full "
-              />
-            </div>
+            <Fade right> 
+              <div className="relative z-20 aspect-square w-32 overflow-hidden rounded-3xl shadow-xl shadow-black/40  lg:w-auto ">
+                {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+                <img
+                  src={PImage}
+                  alt="profile-image"
+                  className="object-cover absolute h-full w-full "
+                />
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

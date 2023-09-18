@@ -1,8 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 // import "swiper/swiper-bundle.css";
 
-function MyWork({ data }) {
+const MyWork = ({ data }) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="w-full px-4 pt-4 sm:px-8 sm:pt-8">
       <h2 className="mb-4 cshadow text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl">
@@ -28,7 +33,10 @@ function MyWork({ data }) {
       </div>
       <div className=" w-full">
         <Link to={"/work-detail"}>
-          <div className=" w-fit bg-emerald-600 font-bold px-4 py-2 rounded-full m-auto my-4 hover:bg-emerald-700 cursor-pointer">
+          <div
+            className=" w-fit bg-emerald-600 font-bold px-4 py-2 rounded-full m-auto my-4 hover:bg-emerald-700 cursor-pointer"
+            onClick={scrollToTop}
+          >
             {" "}
             Show All Projects
           </div>
@@ -36,6 +44,6 @@ function MyWork({ data }) {
       </div>
     </section>
   );
-}
+};
 
 export default MyWork;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 
 function EduExp({ education, experience }) {
   if (!experience && !education) {
@@ -19,9 +20,11 @@ function EduExp({ education, experience }) {
                   key={index}
                 >
                   <div className="absolute -left-2 top-3 flex items-center space-x-2 md:-left-4">
-                    <span className="whitespace-nowrap rounded-full border border-green-700 bg-stone-900 px-2 py-1 text-xs font-bold text-white shadow-xl shadow-black/30">
-                      {edu.EduTimePeriod}
-                    </span>
+                    <Fade top>
+                      <span className="whitespace-nowrap rounded-full border border-green-700 bg-stone-900 px-2 py-1 text-xs font-bold text-white shadow-xl shadow-black/30">
+                        {edu.EduTimePeriod}
+                      </span>
+                    </Fade>
                     <span className="text-xs font-medium text-stone-400">
                       {edu.EduInstituteName}
                     </span>
@@ -47,9 +50,11 @@ function EduExp({ education, experience }) {
                   key={index}
                 >
                   <div className=" absolute -left-2 top-3 flex items-center space-x-2 md:-left-4">
-                    <span className="whitespace-nowrap rounded-full border border-green-700 bg-stone-900 px-2 py-1 text-xs font-bold text-white shadow-xl shadow-black/30">
-                      {exp.ExpTimePeriod}
-                    </span>
+                    <Fade bottom>
+                      <span className="whitespace-nowrap rounded-full border border-green-700 bg-stone-900 px-2 py-1 text-xs font-bold text-white shadow-xl shadow-black/30">
+                        {exp.ExpTimePeriod}
+                      </span>
+                    </Fade>
                     <span className="text-xs font-medium text-stone-400">
                       {exp.ComapnyName}
                     </span>

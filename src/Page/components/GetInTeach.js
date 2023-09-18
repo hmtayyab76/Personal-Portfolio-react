@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import map from "../assets/map.webp";
 import "../portfolio.css";
+import { Fade } from "react-reveal";
 function GetInTeach({ data }) {
   const [msg, setmsg] = useState(false);
 
@@ -271,15 +272,17 @@ function GetInTeach({ data }) {
                   id="message"
                 ></textarea>
               </div>
-              <button
-                aria-label="Submit contact form"
-                className="w-max rounded-full border-2 border-green-800 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-green-800 focus:ring-offset-2 focus:ring-offset-stone-800"
-                type="submit"
-                value="Send"
-                fdprocessedid="c3tl6"
-              >
-                Send Message
-              </button>
+              <Fade bottom>
+                <button
+                  aria-label="Submit contact form"
+                  className="w-max rounded-full border-2 border-green-800 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-green-800 focus:ring-offset-2 focus:ring-offset-stone-800"
+                  type="submit"
+                  value="Send"
+                  fdprocessedid="c3tl6"
+                >
+                  Send Message
+                </button>
+              </Fade>
               {msg ? (
                 <div className="fixed top-10 right-10 flex items-center z-50 ">
                   <div className="relative p-2 bg-black rounded font-bold text-green-700">

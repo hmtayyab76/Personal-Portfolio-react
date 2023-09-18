@@ -117,7 +117,9 @@ function WorkDetail({ data }) {
 
       {ProjectsData.map((data, index) => (
         <div key={index} className="p-10 max-lg:p-5 w-full">
-          <h1 className="text-center font-extrabold text-2xl">{data.name}</h1>
+          <h1 className="text-center font-extrabold text-2xl">
+            {index + 1 + " - "} {data.name}
+          </h1>
           <div className="flex justify-center w-full ">
             <div
               className={`max-lg:w-full w-4/5 p-10 max-lg:p-5 overflow-x-auto flex transform transition-transform duration-500 hsc`}
